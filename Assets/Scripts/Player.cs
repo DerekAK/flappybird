@@ -60,6 +60,8 @@ public class Player : MonoBehaviour
     }
 
     private void OnEnable(){
+        // Player is enabled/disabled in GameManager with pause and play
+        // This just resets the position and direction vectors to zero basically
         Vector3 position = transform.position;
         position.y = 0f;
         transform.position = position;
